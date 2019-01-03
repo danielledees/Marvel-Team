@@ -4,12 +4,13 @@
         <head>
             <meta charset = "UTF-8">
             <!-- Compressed CSS -->
+            
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css" integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA==" crossorigin="anonymous">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
             <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
             <link rel="stylesheet" type="text/css" href="assets/css/style.css">
             <script src="https://code.jquery.com/jquery.js"></script> 
-            <!-- Compressed JavaScript -->
+       
            
         </head>
 
@@ -17,19 +18,20 @@
 
            <div class = "top-bar">
                 <div class = "top-bar-left">
-                    <h3> <b>Dive into Marvel</b></h3>
+                    <h1>Dive into Marvel</h1>
                 </div>
 
-                <div class = "top-bar-right" style = "opacity: 0.8;">
+                <div class = "top-bar-right" >
                     <span class = "input-group-lable">Discover your Hero</span>
                         <input class = "input-group-field" type = "text" placeholder = "Search a character" id = "character-input">
                     <div class = "input-group-button">
-                        <input type = "submit" class = "button" id="sub-button" value = "submit" >
+                        <input type="submit" class = "button" id="sub-button" >
                     </div>
 
                 </div>
 
            </div>
+           <br>
              <!-- <div class="cell small-6" style = "background:blue; align-content: center;"  >
                 <form>
                     <div class="input-group" style="width: 36rem;">
@@ -45,9 +47,9 @@
                
                 <div class="cell small-2" style =  >
                         
-                            <div class="card" style="width: 300px; ">
-                                <div class="card-divider">
-                                    <h1 id="name-div"></h1>
+                            <div class="card">
+                                <div class="card-divider" style="width: 300px; background:#ec1d24; ">
+                                    <h5 id="name-div">Character:</h5>
                                 </div>
                               
                                 <div class="card-section">
@@ -61,10 +63,13 @@
                 
                 </div>
                 <div class = "cell small-5">
-                   
+                  
                         
                 </div>
                 <div class="cell small-5" style =  >
+                        <div class="card-divider"  style="background:#ec1d24; color:cornsilk;">
+                        <div>Description</div>
+                            </div>
                         <div class="card" >
                                  <div>
                             <img src="images/marvel_loader.gif" id="loader-img">
@@ -81,9 +86,9 @@
             </div>
             <div class = "grid-x grid-margin-y">
 
-                    <div class="cell small-12" >
-                            <div class="card" >
-                                <div class="card-divider" style = "text-align: center;">
+                    <div class="cell small-12" style = ""  >
+                            <div class="card"  >
+                                <div class="card-divider" style = "text-align: center; background:#ec1d24; color:cornsilk;">
                                     <h1>Here's a good place to start.</h1>
                                 </div>
                                 <div class="card-section">
@@ -97,19 +102,19 @@
                                                 <th width = "100px"> Original Publish date</th>
                                                 <th width = "100px">Author</th>-->
 
-                                                <th scope="col">Cover</th>
-                                                <th scope="col">Title</th>
-                                                <th scope="col">Description</th>
-                                                <th scope="col">Page Count</th>
-                                                <th scope="col">Release Date</th>
+                                                <th scope = "col">Cover</th>
+                                                <th scope = "col">Title</th>
+                                                <th scope = "col">Description</th>
+                                                <th scope = "col">Page Count</th>
+                                                <th scope = "col">Release Date</th>
                                               </tr>
                                             </thead>
                                             <tbody id="table-body">
-                                                    <td><span id="comic-thumb"></span></td>
-                                                    <td><span id="comic-title"></span></td>
-                                                    <td><span id="comic-desc"></span></td>
-                                                    <td><span id="comic-pages"></span></td>
-                                                    <td><span id="comic-release"></span></td>
+                                                    <td><span class= "zoom"></span></td>
+                                                    <td><span id = "comic-title"></span></td>
+                                                    <td><span id = "comic-desc"></span></td>
+                                                    <td><span id = "comic-pages"></span></td>
+                                                    <td><span id = "comic-release"></span></td>
                                             </tbody>
                                           </table>
                                 </div>

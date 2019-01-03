@@ -40,7 +40,7 @@ $(document).ready(function(){
             $("#comic-table").show()
             //grab relevant data
             var description = response.data.results[0].description
-
+                console.log(response.data.results[0].description)
             var name = response.data.results[0].name
 
             var thumbnailPath = response.data.results[0].thumbnail.path
@@ -67,6 +67,7 @@ $(document).ready(function(){
 
                   var coverThumb = $("<img>")
                   coverThumb.attr("src", cover) 
+                  coverThumb.addClass("comic-thumb")
 
                   var newRow = $("<tr>")
 
