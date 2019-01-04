@@ -10,6 +10,8 @@
             <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
             <link rel="stylesheet" type="text/css" href="assets/css/style.css">
             <script src="https://code.jquery.com/jquery.js"></script> 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src= "https://apis.google.com/js/api.js"></script>
        
            
         </head>
@@ -17,20 +19,21 @@
         <body>
 
            <div class = "top-bar">
-                <div class = "top-bar-left">
+                
                     <h1>Dive into Marvel</h1>
-                </div>
+               
 
                 <div class = "top-bar-right" >
                     <span class = "input-group-lable">Discover your Hero</span>
                         <input class = "input-group-field" type = "text" placeholder = "Search a character" id = "character-input">
                     <div class = "input-group-button">
-                        <input type="submit" class = "button" id="sub-button" >
+                        <input type="submit" class = "button" id="sub-button" value = "search" >
                     </div>
 
                 </div>
 
            </div>
+           <br>
              <!-- <div class="cell small-6" style = "background:blue; align-content: center;"  >
                 <form>
                     <div class="input-group" style="width: 36rem;">
@@ -62,7 +65,8 @@
                 
                 </div>
                 <div class = "cell small-5">
-                  
+                
+                        <div id="youtubevid"></div>
                         
                 </div>
                 <div class="cell small-5" style =  >
@@ -122,9 +126,10 @@
 
 
 
-            <script type = "text/javascript" src= "assets/javascript/app.js">
+            <script type = "text/javascript" src= "assets/javascript/app.js"></script>
+            <script type="text/javascript" src="assets/javascript/youtube.js"></script>
             
-            </script>
+            
 
         
         </body>
