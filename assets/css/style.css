@@ -34,3 +34,19 @@ tbody tr:nth-child(odd){
     background:#ec1d24;
     color:white;
 }
+tr:hover td{
+    color:black;
+}
+.hover{
+    color:black;
+}
+#thumbnail-div{
+    width: 500px;
+    height:auto;
+    margin:0 auto;
+}
+.button{
+    background: cornsilk;
+    color:#ec1d26;
+    border-radius:8px;
+}
