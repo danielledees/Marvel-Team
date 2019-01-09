@@ -14,8 +14,10 @@ $(document).ready(function() {
         
         $.get(
         "https://www.googleapis.com/youtube/v3/search", {
+            
             part: "snippet",
-            q: userSearch,
+            maxResults: 2,
+            q:  userSearch + "origins" + "comicstorian",
             type: "video",
             videoEmbeddable: true,
             key: "AIzaSyCfYX18CUnQSumetnfx59uPgQN3400sTG8"}, 
@@ -27,15 +29,9 @@ $(document).ready(function() {
                     var url = root + videoId;
                     console.log(url, "-------------------------")
                     $("#youtubevid").append(`<iframe width="560" height="315" src=${url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
-
                 }
-
              }
         )
-
-   
-  
-
     })
 
 })

@@ -20,7 +20,6 @@ $(document).ready(function(){
         var character = $("#character-input").val().trim()
         var queryUrl = "https://gateway.marvel.com:443/v1/public/characters?name=" + character + "&limit=10&ts=1&apikey=f8f6b1e652ea6b5406fc0494dc8babca&hash=1aaf11cbe07314e2d1ea51a9f6bd342c"
 
-
         $.ajax({
             url: queryUrl,
             method: "GET"
@@ -104,6 +103,18 @@ $(document).ready(function(){
 
                   $("#table-body").append(newRow)
                 } 
+
+                var appendTable = function(arrayOfResults) {
+                    var newRow = $("<tr>")
+                    for (var i = 0; i < arrayOfResults.length; i++) {
+                    let td = $("<td>")
+                    let tdspan = $("<span>")
+                    tdspan.append(arrayOfResults[i])
+                    td.append(tdspan)
+                    newRow.append(td1)
+                    }
+                    $("#table-body").append(newRow)
+                  }
             })
 
             //create new displays

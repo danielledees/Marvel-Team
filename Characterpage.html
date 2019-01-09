@@ -4,10 +4,10 @@
         <head>
             <meta charset = "UTF-8">
             <!-- Compressed CSS -->
-            
+            <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css" integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA==" crossorigin="anonymous">
 
-            <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+            
             <link rel="stylesheet" type="text/css" href="assets/css/style.css">
             <script src="https://code.jquery.com/jquery.js"></script> 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -22,12 +22,11 @@
                 
                     <h1>Dive into Marvel</h1>
                
-
                 <div class = "top-bar-right" >
                     <span class = "input-group-lable">Discover your Hero</span>
                         <input class = "input-group-field" type = "text" placeholder = "Search a character" id = "character-input">
                     <div class = "input-group-button">
-                        <input type="submit" class = "button" id="sub-button" value = "search" >
+                        <button type="button" class = "button" id="sub-button" value = "search" >Search</button>
                     </div>
 
                 </div>
@@ -39,18 +38,18 @@
                     <div class="input-group" style="width: 36rem;">
                         <span class="input-group-label">Find Hero</span>
                             <input class="input-group-field" type="string">
-                        <div class="input-group-button">
-                            <input type="submit" class="button" value="submit">
+                    <div class="input-group-button">
+                        <input type="submit" class="button" value="submit">
                         </div>
                     </form>
             </div>  -->
             <div class="grid-x grid-padding-x grid-margin-x grid-margin-y ">
                     
                
-                <div class="cell small-2" style =  >
+                <div class="cell small-2 medium-5 " style =  >
                         
                             <div class="card">
-                                <div class="card-divider" style="width: 300px; background:#ec1d24; color:cornsilk; ">
+                                <div class="card-divider" style="width: 1200px; background:#ec1d24; color:cornsilk; ">
                                     <h5 id="name-div">Character:</h5>
                                 </div>
                               
@@ -68,6 +67,9 @@
                 
                         <div id="youtubevid"></div>
                         
+                </div>
+                <div class ="grid-x grid-margin-y">
+                    
                 </div>
                 <div class="cell small-5" style =  >
                         <div class="card-divider"  style="background:#ec1d24; color:cornsilk;">
@@ -89,14 +91,14 @@
             </div>
             <div class = "grid-x grid-margin-y">
 
-                    <div class="cell small-12" style = ""  >
+                    <div class="cell small-12"  >
                             <div class="card"  >
                                 <div class="card-divider" style = "text-align: center; background:#ec1d24; color:cornsilk;">
                                     <h1>Here's a good place to start.</h1>
                                 </div>
                                 <div class="card-section">
                                    
-                                    <table class = "hover" id="comic-table">
+                                    <table  id="comic-table">
                                             <thead >
                                               <tr>
                                                 <!-- <th width = "20px" >Cover</th>
