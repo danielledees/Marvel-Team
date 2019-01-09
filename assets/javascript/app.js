@@ -1,4 +1,6 @@
 $(document).ready(function(){ 
+    console.log("app.js linked")
+
     $("#loader-img").hide()
     $("#noResults").hide()
     $("#comic-table").hide()
@@ -62,7 +64,12 @@ $(document).ready(function(){
                   var name = comicResponse.data.results[i].title
                   var desc = comicResponse.data.results[i].description
                   var pageCount = comicResponse.data.results[i].pageCount
+
                   var release = comicResponse.data.results[i].dates[0].date
+                  var releaseFormat = "MM/DD/YYYY"
+                  var convertedRelease = moment(release).format(releaseFormat)
+                  console.log(convertedRelease)
+
 
                   var coverThumb = $("<img>")
                   coverThumb.attr("src", cover) 
@@ -92,7 +99,7 @@ $(document).ready(function(){
 
                   var td5 = $("<td>")
                   var td5span = $("<span>")
-                  td5span.text(release)
+                  td5span.text(convertedRelease)
                   td5.append(td5span)
 
                   newRow.append(td1)

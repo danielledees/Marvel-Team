@@ -1,4 +1,6 @@
 $(document).ready(function(){ 
+    console.log("app.js linked")
+    
     $("#loader-img").hide()
     $("#noResults").hide()
     $("#comic-table").hide()
