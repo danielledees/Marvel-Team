@@ -45,6 +45,13 @@ tr:hover td{
     height:auto;
     margin:0 auto;
 }
+@media screen and (max-width: 39.9375em) {
+#thumbnail-div{
+    width: 200px;
+    height:200px;
+    margin:0 auto;
+}
+}
 .button{
     background: cornsilk;
     color:#ec1d26;

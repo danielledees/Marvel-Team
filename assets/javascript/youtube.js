@@ -17,7 +17,7 @@ $(document).ready(function() {
             
             part: "snippet",
             maxResults: 2,
-            q:  userSearch + "origins" + "comicstorian",
+            q:  userSearch + " origins" ,
             type: "video",
             videoEmbeddable: true,
             key: "AIzaSyCfYX18CUnQSumetnfx59uPgQN3400sTG8"}, 
