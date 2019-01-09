@@ -1,7 +1,9 @@
 body {
-    background-color: black;
+    background-image: url("../assets/images/Marvel-Logo-HD-Background.png");
+    background-size: cover;
+    background-color: white;
     font-family: 'Ubuntu', sans-serif;
-    color:darkred;
+    color:#ec1d24;
 
 
 }
@@ -10,8 +12,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkred;
-    color: black;
+    background-color: #ec1d24;
+    color: whitesmoke;
 }
 
 #image {
