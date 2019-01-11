@@ -4,6 +4,8 @@ $(document).ready(function(){
     $("#loader-img").hide()
     $("#noResults").hide()
     $("#comic-table").hide()
+    $("#topContent").hide()
+    $("#bottomContent").hide()
 
     $("#sub-button").on("click", function(event){
         console.log("click received")
@@ -12,6 +14,9 @@ $(document).ready(function(){
 
         $("#loader-img").show()
         $("#noResults").hide()
+
+        $("#topContent").show()
+        $("#bottomContent").show()
 
         $("#description-div").empty()
         $("#thumbnail-div").empty()
@@ -41,7 +46,6 @@ $(document).ready(function(){
             $("#comic-table").show()
             //grab relevant data
             var description = response.data.results[0].description
-                console.log(response.data.results[0].description)
             var name = response.data.results[0].name
 
             var thumbnailPath = response.data.results[0].thumbnail.path
@@ -66,12 +70,12 @@ $(document).ready(function(){
                   var pageCount = comicResponse.data.results[i].pageCount
 
                   var link = comicResponse.data.results[i].urls[0].url
-                  console.log(link)
+                //   console.log(link)
 
                   var release = comicResponse.data.results[i].dates[0].date
                   var releaseFormat = "MM/DD/YYYY"
                   var convertedRelease = moment(release).format(releaseFormat)
-                  console.log(convertedRelease)
+                //   console.log(convertedRelease)
 
                   var coverThumb = $("<img>")
                   coverThumb.attr("src", cover) 
@@ -115,18 +119,6 @@ $(document).ready(function(){
 
                   $("#table-body").append(newRow)
                 } 
-
-                var appendTable = function(arrayOfResults) {
-                    var newRow = $("<tr>")
-                    for (var i = 0; i < arrayOfResults.length; i++) {
-                    let td = $("<td>")
-                    let tdspan = $("<span>")
-                    tdspan.append(arrayOfResults[i])
-                    td.append(tdspan)
-                    newRow.append(td1)
-                    }
-                    $("#table-body").append(newRow)
-                  }
             })
 
             //create new displays
