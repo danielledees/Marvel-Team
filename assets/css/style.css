@@ -1,7 +1,10 @@
 body{
     background-image: url("../images/Marvel-Logo-HD-Background.png");
     background-repeat: repeat;
+
     background-attachment: fixed;
+
+
     background-size: auto;
     background-position: center;
 }
@@ -35,13 +38,14 @@ tr:hover td{
 .hover{
     color:black;
 }
-#thumbnail-div{
+/* #thumbnail-div{
     width: 500px;
     height:auto;
     margin:0 auto;
-}
+} */
 .button{
     background: cornsilk;
     color:#ec1d26;
     border-radius:8px;
 }
+
