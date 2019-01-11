@@ -6,14 +6,15 @@
             <!-- Compressed CSS -->
             <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css" integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA==" crossorigin="anonymous">
-            <link rel="stylesheet" href="assets/css/foundation.css">
+
             
             <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+            
             <script src="https://code.jquery.com/jquery.js"></script> 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src= "https://apis.google.com/js/api.js"></script>
-       
-           
+            <title>Marvel Character Database</title>
+
         </head>
 
         <body>
@@ -46,11 +47,14 @@
             <div class="grid-x grid-padding-x grid-margin-x grid-margin-y ">
                     
                
-                <div class="cell small-5 medium-5 "   >
+                <div class="cell small-7 medium-6 " >
                         
                             <div class="card">
-                                <div class="card-divider" style="width: 1200px; background:#ec1d24; color:cornsilk; ">
+                                <div class="card-divider marvelred" style="width: 1200px; ">
                                     <h5 id="name-div">Character:</h5>
+                                </div>
+                                <div>
+                                    <img src="images/marvel_loader.gif" id="loader-img">
                                 </div>
                               
                                 <div class="card-section">
@@ -63,31 +67,35 @@
                 
                 
                 </div>
-                <div class = "cell small-5 medium-5">
-                
-                        <div id="youtubevid"></div>
-                        
-                </div>
-                <div class ="grid-x grid-margin-y">
-                    
-                </div>
-                <div class="cell small-5 medium-5"   >
-                        <div class="card-divider"  style="background:#ec1d24; color:cornsilk;">
+               
+         
+                <div class="cell small-6 " id = "description"  >
+                        <div class="card-divider marvelred">
                         <div>Description</div>
-                            </div>
-                        <div class="card" >
-                                 <div>
-                            <img src="images/marvel_loader.gif" id="loader-img">
                         </div>
+                        <div class="card" >
                                 
                                 <div class="card-section" >
                                         <div id="description-div"></div>
                                         <div id="comics-div"></div>
                                 </div>
                             </div>        
-                
+                <div class = "cell small-5 medium-5">
+                 <div class = "card">
+                     <div class="card-divider marvelred">
+                        <h5>Here are some origins.</h5>
+                    </div>      
+                     <div class="card-section">
+                    
+                        <div id="youtubevid"></div>
+                  </div>
+                </div>       
+                </div>  
                 </div>
                 
+            </div>
+            <div class = "grid-x grid-margin-y">
+               
             </div>
             <div class = "grid-x grid-margin-y">
 
@@ -101,17 +109,11 @@
                                     <table  id="comic-table">
                                             <thead >
                                               <tr>
-                                                <!-- <th width = "20px" >Cover</th>
-                                                <th width = "50px" > Titel</th>
-                                                <th width = "100px">Description</th>
-                                                <th width = "100px"> Original Publish date</th>
-                                                <th width = "100px">Author</th>-->
-
                                                 <th scope = "col">Cover</th>
                                                 <th scope = "col">Title</th>
                                                 <th scope = "col">Description</th>
-                                                <th scope = "col">Page Count</th>
                                                 <th scope = "col">Release Date</th>
+                                                <th scope = "col">More Info</th>
                                               </tr>
                                             </thead>
                                             <tbody id="table-body">
@@ -130,8 +132,7 @@
 
             <script type = "text/javascript" src= "assets/javascript/app.js"></script>
             <script type="text/javascript" src="assets/javascript/youtube.js"></script>
-            
-            
+            <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
         
         </body>

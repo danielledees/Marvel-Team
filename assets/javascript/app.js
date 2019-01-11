@@ -1,4 +1,6 @@
 $(document).ready(function(){ 
+    console.log("app.js linked")
+
     $("#loader-img").hide()
     $("#noResults").hide()
     $("#comic-table").hide()
@@ -62,12 +64,19 @@ $(document).ready(function(){
                   var name = comicResponse.data.results[i].title
                   var desc = comicResponse.data.results[i].description
                   var pageCount = comicResponse.data.results[i].pageCount
+
+                  var link = comicResponse.data.results[i].urls[0].url
+                  console.log(link)
+
                   var release = comicResponse.data.results[i].dates[0].date
+                  var releaseFormat = "MM/DD/YYYY"
+                  var convertedRelease = moment(release).format(releaseFormat)
+                  console.log(convertedRelease)
 
                   var coverThumb = $("<img>")
                   coverThumb.attr("src", cover) 
                   coverThumb.addClass("comic-thumb")
-
+                  
                   var newRow = $("<tr>")
 
                   var td1 = $("<td>")
@@ -87,13 +96,16 @@ $(document).ready(function(){
 
                   var td4 = $("<td>")
                   var td4span = $("<span>")
-                  td4span.text(pageCount)
+                  td4span.text(convertedRelease)
                   td4.append(td4span)
 
                   var td5 = $("<td>")
                   var td5span = $("<span>")
-                  td5span.text(release)
+                  var readMore = $("<a target='blank'> Read More </a>")
+                  readMore.attr("href", link)
+                  td5span.append(readMore)
                   td5.append(td5span)
+
 
                   newRow.append(td1)
                   newRow.append(td2)
