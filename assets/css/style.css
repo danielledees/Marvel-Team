@@ -1,6 +1,6 @@
 body{
     background-image: url("../images/Marvel-Logo-HD-Background.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: auto;
 }
 
@@ -40,13 +40,37 @@ tr:hover td{
 .hover{
     color:black;
 }
-#thumbnail-div{
+/* #thumbnail-div{
     width: 500px;
     height:auto;
     margin:0 auto;
-}
+} */
 .button{
     background: cornsilk;
     color:#ec1d26;
     border-radius:8px;
+}
+#description{
+    float:right;
+}
+/* @media screen and (max-width:980px){
+    #thumbnail-div{
+        width: 400px;
+        height:auto;
+        margin:0 auto;
+    }
+} */
+@media screen and (max-width:768px){
+    #thumbnail-div{
+        width: 300px;
+        height:auto;
+        margin:0 auto;
+    }
+}
+@media only screen and (max-width:640px){
+    #thumbnail-div{
+        width: 200px;
+        height:auto;
+        margin:0 auto;
+    }
 }
