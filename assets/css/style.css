@@ -1,7 +1,12 @@
 body{
     background-image: url("../images/Marvel-Logo-HD-Background.png");
     background-repeat: repeat;
+
+    background-attachment: fixed;
+
+
     background-size: auto;
+    background-position: center;
 }
 
 .comic-thumb{
@@ -11,14 +16,7 @@ body{
     height: 50px;
     margin: 0 auto;
 }
-/* .zoom {
-    padding: 50px;
-    transition: transform .2s; 
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-  } */
-  
+
   .comic-thumb:hover {
     transform: scale(3.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
@@ -50,27 +48,4 @@ tr:hover td{
     color:#ec1d26;
     border-radius:8px;
 }
-#description{
-    float:right;
-}
-/* @media screen and (max-width:980px){
-    #thumbnail-div{
-        width: 400px;
-        height:auto;
-        margin:0 auto;
-    }
-} */
-@media screen and (max-width:768px){
-    #thumbnail-div{
-        width: 300px;
-        height:auto;
-        margin:0 auto;
-    }
-}
-@media only screen and (max-width:640px){
-    #thumbnail-div{
-        width: 200px;
-        height:auto;
-        margin:0 auto;
-    }
-}
+
