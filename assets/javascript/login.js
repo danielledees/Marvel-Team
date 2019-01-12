@@ -88,51 +88,6 @@ ui.start('#firebaseui-auth-container', uiConfig);
 
 
 
-renderImages()
-
-
-
-
-//display marvel gifs 
-
-// my API Key xQFr9FVDliZZP58r6lj2oZ94REMLxL68
-
-//var queryURL = $.get("http://api.giphy.com/v1/gifs/search?q=marvel&api_key=xQFr9FVDliZZP58r6lj2oZ94REMLxL68&limit=5");
-//xhr.done(function(data) { console.log("success got data", data); });
-
-
-    
-
-    /*// After the data from the AJAX request comes back
-    .then(function(response) {
-        console.log(response);
-
-
-        
-
-        // Saving the image_original_url property
-          var imageUrl = response.data.image_original_url;
-
-          // Creating and storing an image tag
-          var marvelImage = $("<img>");
-
-          // Setting the catImage src attribute to imageUrl
-          marvelImage.attr("src", imageUrl);
-          marvelImage.attr("alt", "marvel image");
-
-          // Prepending the catImage to the images div
-          $("#display-gifs").prepend(marvelImage);
-
-    })
-    */
-
-
-  
-
-
-
-   
-   
 
 
 
